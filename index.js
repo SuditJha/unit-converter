@@ -30,23 +30,17 @@ btnEl.addEventListener("click", function(){
 function convertLength(value){
     const feet = (value * 3.281).toFixed(3);
     const meter = (value / 3.281).toFixed(3); 
-    console.log(feet)
-    console.log(meter)
     lengthEl.innerHTML = `<p class="output-value">${value} meters = ${feet} feet | ${value} feet = ${meter} meters`
 }
 
 function convertVolume(value){
     const gallon = (value * 0.264).toFixed(3);
     const liter = (value / 0.264).toFixed(3);
-    console.log(gallon)
-    console.log(liter)
     volumeEl.innerHTML = `<p class="output-value">${value} liters = ${gallon} gallons | ${value} gallons = ${liter} liters`
 }
 
 function convertMass(value){
     const pound = (value * 2.204).toFixed(3);
     const kilogram = (value / 2.204).toFixed(3);
-    console.log(pound)
-    console.log(kilogram)
     massEl.innerHTML = `<p class="output-value">${value} kilograms = ${pound} pounds | ${value} pounds = ${kilogram} kilograms`
 }
